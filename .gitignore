@@ -1,0 +1,15 @@
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+# Modules
+node_modules
+
+### Temporary ###
+*.tmp
+*~
+
+### Source ###
+public/dist
+dist
