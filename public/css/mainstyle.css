@@ -1,0 +1,47 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  color: #212121;
+  font-size: 1.5em;
+}
+.container {
+  background: red;
+  text-align: center;
+  height: 95vh;
+}
+
+.quote-wrapper {
+  background: #ffffff;
+  height: 40%;
+  width: 60%;
+  max-width: 600px;
+  margin: 10% auto;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  height: 30px;
+  width: 120px;
+  margin-left: -60px;
+}
+
+footer {
+  background: #212121;
+  color: #FFFFE0;
+  text-align: center;
+  position: relative;
+  font-size: small;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
