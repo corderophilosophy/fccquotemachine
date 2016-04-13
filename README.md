@@ -1,6 +1,6 @@
 # Free Code Camp Quote Machine
 
-TODO: Write a project description
+This is a simple quote machine as required by Free Code Camp (freecodecamp.com).
 
 ## Contributing
 
