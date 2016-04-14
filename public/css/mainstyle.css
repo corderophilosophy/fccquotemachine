@@ -8,18 +8,21 @@ body {
   font-size: 1.5em;
 }
 .container {
-  background: red;
+  background: #e6e7be;
   text-align: center;
   height: 95vh;
 }
 
 .quote-wrapper {
-  background: #ffffff;
+  background: #212121;
   height: 40%;
   width: 60%;
   max-width: 600px;
   margin: 10% auto;
   position: relative;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 2px rgba(0,0,0,.2);
 }
 
 button {
@@ -30,6 +33,7 @@ button {
   width: 120px;
   margin-left: -60px;
 }
+
 
 footer {
   background: #212121;

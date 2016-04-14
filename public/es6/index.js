@@ -4,8 +4,9 @@ const colors = {
   color: "",
   background: ""
 };
-
 const btn = document.getElementById("getQuote");
+// const xhr = new XMLHttpRequest();
+const quoteAPI = "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous";
 
 function pickColor() {
   let color = '#';
@@ -36,6 +37,26 @@ function changeColor() {
   quoteWrapper.style.background = colors.background;
 }
 
+
+function requestQuote() {
+  $.ajax({
+    url: quoteAPI,
+    type: 'POST',
+    data: {},
+    dataType: 'json',
+    success: function (data) {
+      document.getElementById("quote").innerHTML = data.quote;
+      document.getElementById("author").innerHTML = "-" + data.author;
+    },
+    error: function (err) {
+      alert(err);
+    },
+    beforeSend: function (xhr) {
+      xhr.setRequestHeader("X-Mashape-Authorization", "urwIsbBrGBmshvnwdbwnm1jO1kqwp1jsBokjsnCGSHEyjQ9Hcc");
+    }
+  });
+}
 btn.addEventListener("click", function () {
+  requestQuote();
   changeColor();
 }, false);
