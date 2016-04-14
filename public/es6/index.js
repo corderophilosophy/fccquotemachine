@@ -45,8 +45,8 @@ function requestQuote() {
     data: {},
     dataType: 'json',
     success: function (data) {
-      document.getElementById("quote").innerHTML = data.quote;
-      document.getElementById("author").innerHTML = "-" + data.author;
+      document.getElementById("quote").innerHTML = `<p>${data.quote}</p>`;
+      document.getElementById("author").innerHTML = `<p>${data.author}</p>`;
     },
     error: function (err) {
       alert(err);

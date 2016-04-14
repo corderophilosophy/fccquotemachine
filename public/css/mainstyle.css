@@ -7,6 +7,9 @@ body {
   color: #212121;
   font-size: 1.5em;
 }
+p {
+  padding: 10px;
+}
 .container {
   background: #e6e7be;
   text-align: center;
