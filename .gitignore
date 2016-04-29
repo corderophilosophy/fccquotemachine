@@ -13,7 +13,3 @@ node_modules
 ### Source ###
 public/dist
 dist
-
-.eslintrc.json
-gulpfile.js
-test.js
